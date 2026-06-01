@@ -3,7 +3,7 @@
 # - 저장된 값의 순서가 유지됨
 # - 인덱싱과 슬라이싱이 가능
 # - 순회(iterable) 가능
-
+from inspect import stack
 
 # list---------------------------------------------------
 # - 여러 값(literal)을 묶어서 관리 (컨테이너 자료형)
@@ -209,3 +209,13 @@ print("d :",d,", e :", e)
 numbers = [10, 20, 30, 40, 50]
 a, *b, c = numbers
 print("a :",a,", b :", b,", c", c)
+
+# 스택
+plate = ['plate1', 'plate2']
+plate.append('plate3')
+
+print(plate)
+print(plate.pop())
+print(plate)
+print(plate.pop())
+print(plate)
